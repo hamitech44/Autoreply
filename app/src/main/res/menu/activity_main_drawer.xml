@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Help" />
+        <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="About us" />
+        <item
+            android:id="@+id/contact_us"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Contact us" />
+
+    </group>
+
+    <item android:title="Advance options">
+        <menu>
+            <item
+                android:id="@+id/classtime"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Class/Office Timing" />
+
+            <item
+                android:id="@+id/famalert"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Family Alert" />
+
+            <item
+                android:id="@+id/namaztime"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Namaz Timing" />
+            <item
+                android:id="@+id/rejectcall"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Reject all calls"
+                />
+            <item
+                android:id="@+id/blacklist"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Block Numbers"
+                />
+
+        </menu>
+    </item>
+
+</menu>

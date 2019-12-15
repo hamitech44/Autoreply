@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hypersquad.autoreply.famalert">
+
+    <TextView
+        android:id="@+id/pnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:padding="7dp"
+        android:text="Enter upto 3 Family numbers"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:fontFamily="serif"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_name3"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/pnum"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:hint="Contact # 1"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="24sp"
+        android:layout_below="@+id/pnum"
+        android:layout_centerHorizontal="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_name2"
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/input_layout_name3"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/phonenumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:hint="Contact # 2"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="24sp"
+        android:layout_below="@+id/phonenumber"
+        android:layout_centerHorizontal="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_name"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/input_layout_name2"
+        android:layout_marginTop="20dp"
+
+        android:layout_height="wrap_content">
+
+        <EditText
+        android:id="@+id/phonenumber3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:hint="Contact # 3"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Switch
+        android:id="@+id/phoneswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn on family alert"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input3"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/input_layout_name2"
+        android:layout_marginTop="20dp"
+
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input4"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/input_layout_name2"
+        android:layout_marginTop="20dp"
+
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/viva2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="number?"
+        android:layout_below="@+id/input_layout_name"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/viva1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="number?"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/viva2"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

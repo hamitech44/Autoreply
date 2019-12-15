@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_namaztime"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hypersquad.autoreply.namaztime">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bubbles"
+        tools:ignore="ContentDescription"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/stfajar" />
+
+    <Button
+        android:id="@+id/stfajar"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/b2"
+        android:textColor="#FFF7F2"
+        android:textSize="20sp"
+        android:hint="Start"
+        android:onClick="onStfajarClicked"
+        android:layout_alignBaseline="@+id/editText61"
+        android:layout_alignBottom="@+id/editText61"
+        android:layout_toStartOf="@+id/namaz1" />
+
+    <Button
+        android:id="@+id/enisha"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stisha"
+        android:layout_alignBottom="@+id/stisha"
+        android:layout_alignStart="@+id/enmaghrib"
+        android:background="@drawable/b2"
+        android:hint="End"
+        android:onClick="onEnIshaClicked"
+        android:textColor="#FFF7F2"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/enmaghrib"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stmaghrib"
+        android:layout_alignBottom="@+id/stmaghrib"
+        android:layout_alignStart="@+id/enasar"
+        android:background="@drawable/b2"
+        android:hint="End"
+        android:onClick="onEnMaghribClicked"
+        android:textColor="#FFF7F2"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/enasar"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stasar"
+        android:layout_alignBottom="@+id/stasar"
+        android:layout_alignStart="@+id/enzohar"
+        android:background="@drawable/b2"
+        android:hint="End"
+        android:onClick="onEnAsarClicked"
+        android:textColor="#FFF7F2"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/enzohar"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stzohar"
+        android:layout_alignBottom="@+id/stzohar"
+        android:layout_alignStart="@+id/enfajar"
+        android:background="@drawable/b2"
+        android:hint="End"
+        android:onClick="onEnZoharClicked"
+        android:textColor="#FFF7F2"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/enfajar"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/b2"
+        android:hint="End"
+        android:onClick="onEnfajarClicked"
+        android:textColor="#FFF7F2"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/stfajar"
+        android:layout_alignBottom="@+id/stfajar"
+        android:layout_alignEnd="@+id/namaz1"
+        android:layout_marginEnd="19dp" />
+
+    <Button
+        android:id="@+id/stisha"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText60"
+        android:layout_alignBottom="@+id/editText60"
+        android:layout_alignStart="@+id/stmaghrib"
+        android:background="@drawable/b2"
+        android:hint="Start"
+        android:onClick="onStIshaClicked"
+        android:textColor="#FFF7F2"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/stmaghrib"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText59"
+        android:layout_alignBottom="@+id/editText59"
+        android:layout_alignStart="@+id/stasar"
+        android:background="@drawable/b2"
+        android:hint="Start"
+        android:onClick="onStMagribClicked"
+        android:textColor="#FFF7F2"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/stasar"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText58"
+        android:layout_alignBottom="@+id/editText58"
+        android:layout_alignStart="@+id/stzohar"
+        android:background="@drawable/b2"
+        android:hint="Start"
+        android:onClick="onStAsarClicked"
+        android:textColor="#FFF7F2"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/editText61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:ems="4"
+        android:textColor="#ba0404"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Fajar"
+        android:layout_below="@+id/namaz1"
+        android:layout_alignParentStart="true" />
+
+     <TextView
+        android:id="@+id/editText60"
+        android:layout_width="wrap_content"
+         android:textColor="#ba0404"
+         android:textSize="18sp"
+         android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:ems="4"
+        android:text="Isha"
+         android:layout_below="@+id/stmaghrib"
+         android:layout_alignParentStart="true" />
+
+     <TextView
+        android:id="@+id/editText59"
+        android:layout_width="wrap_content"
+         android:textColor="#ba0404"
+         android:textSize="18sp"
+         android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:ems="4"
+        android:text="Maghrib"
+         android:layout_below="@+id/stasar"
+         android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/editText58"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:ems="4"
+        android:text="Asar"
+        android:textColor="#ba0404"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/stzohar"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:id="@+id/namaz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="20dp"
+        android:text="Namaz Timing" />
+
+    <TextView
+        android:id="@+id/editText57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:ems="4"
+        android:text="Zohar"
+        android:textColor="#ba0404"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/stfajar"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/stzohar"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText57"
+        android:layout_alignBottom="@+id/editText57"
+        android:layout_alignStart="@+id/stfajar"
+        android:background="@drawable/b2"
+        android:hint="Start"
+        android:onClick="onStZoharClicked"
+        android:textColor="#FFF7F2"
+        android:textSize="20sp" />
+
+</RelativeLayout>

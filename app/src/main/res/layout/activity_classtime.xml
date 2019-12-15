@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hypersquad.autoreply.classtime"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Switch
+        android:text="Turn it On to set time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeoption"
+        android:checked="false"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:layout_below="@+id/timeoption"
+        android:id="@+id/starttime"
+        android:text="Start time"
+        android:layout_width="wrap_content"
+        android:textColor="#00063e"
+        android:textSize="40dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtViewhour1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hour"
+
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_below="@+id/starttime"
+        android:layout_alignStart="@+id/textViewminute2" />
+
+    <Button
+        android:id="@+id/btn"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClicked"
+        android:text="Set Start Time"
+        style="@style/Widget.AppCompat.Button"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="49dp"
+        android:layout_above="@+id/endtime"
+        android:layout_alignStart="@+id/btn2" />
+    <TextView
+        android:id="@+id/endtime"
+        android:text="End time"
+        android:layout_width="wrap_content"
+        android:textColor="#00063e"
+        android:textSize="40dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtViewhour2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtViewhour2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="hour"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textViewminute1" />
+
+    <Button
+        android:id="@+id/btn2"
+        style="@style/Widget.AppCompat.Button"
+        android:textColor="#FFFFFF"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/buttonshape"
+        android:onClick="onButton2Clicked"
+        android:text="Set End Time"
+        android:layout_below="@+id/textViewminute1"
+        android:layout_alignStart="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textViewminute2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="minute"
+        android:layout_below="@+id/textView7"
+        android:layout_alignEnd="@+id/timeoption" />
+
+    <TextView
+        android:id="@+id/textViewminute1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="minute"
+        android:layout_below="@+id/txtViewhour2"
+        android:layout_alignStart="@+id/textViewminute2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00063e"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/starttime"
+        android:layout_marginStart="19dp"
+        android:text="Starting Hour" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00063e"
+        android:layout_alignBottom="@+id/textViewminute2"
+        android:layout_alignStart="@+id/textView7"
+        android:text="Starting Minute" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView8"
+        android:textColor="#00063e"
+        android:layout_below="@+id/endtime"
+        android:text="Ending Hour" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewminute1"
+        android:layout_alignBottom="@+id/textViewminute1"
+        android:textColor="#00063e"
+        android:layout_alignStart="@+id/textView9"
+        android:text="Ending minute" />
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.hypersquad.autoreply.Blacklist">
+
+<TextView
+    android:id="@+id/pnum"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="80dp"
+    android:fontFamily="serif"
+    android:padding="7dp"
+    android:text="Enter upto 3 numbers"
+    android:textAllCaps="false"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/input_layout_name3"
+    android:layout_marginTop="25dp"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/pnum"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/blocknumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:hint="Contact # 1"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="24sp"
+        android:layout_below="@+id/pnum"
+        android:layout_centerHorizontal="true" />
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/input_layout_name2"
+
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/input_layout_name3"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/blocknumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:hint="Contact # 2"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="24sp"
+        android:layout_below="@+id/blocknumber1"
+        android:layout_centerHorizontal="true" />
+
+</com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/input_layout_name"
+    android:layout_width="match_parent"
+    android:layout_below="@+id/input_layout_name2"
+    android:layout_marginTop="20dp"
+
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/blocknumber3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="11"
+        android:hint="Contact # 3"
+        android:inputType="phone"
+        android:padding="5dp"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true" />
+</com.google.android.material.textfield.TextInputLayout>
+<Switch
+    android:id="@+id/blockswitch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Turn on Call Blocker"
+    android:textAlignment="viewStart"
+    android:textSize="18sp"
+    android:layout_marginStart="25dp"
+    android:layout_marginTop="15dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/blacklistbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/blockswitch"
+        android:layout_below="@+id/input_layout_name"
+        android:layout_marginTop="55dp"
+        android:onClick="SaveValues"
+        android:text="Save" />
+
+</RelativeLayout>
